@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Barra lateral dinamico</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="container">
+    <div class="sidebar">
+      <div class="side-hide">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+
+      <img src="logo.png" width="120" alt="Logo">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Galeria</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+
+    </div>
+
+    <div class="content">
+      <h2>SideBar</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit animi reiciendis, quis a sapiente ea consectetur veniam perspiciatis commodi, corporis voluptas architecto voluptatibus officia iure. Doloribus commodi, nihil voluptatum aperiam.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit animi reiciendis, quis a sapiente ea consectetur veniam perspiciatis commodi, corporis voluptas architecto voluptatibus officia iure. Doloribus commodi, nihil voluptatum aperiam.</p>
+
+
+      <button>Mostrar Sidebar</button>
+    </div>
+
+  </section>
+
+<!-- JS Script -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<script>
+
+  // Muestra SideBar
+  $('button').on('click', function() {
+    $(".container").toggleClass('show');
+  })
+
+  // Oculta SideBar
+  $('.side-hide').on('click', function() {
+    $(".container").toggleClass('show');
+  });
+</script>
+
+</body>
+</html>
